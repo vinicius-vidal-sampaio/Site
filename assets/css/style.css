@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Sixtyfour+Convergence&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main-logo { /* Alinhamento do logo */
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 258px;    
+}
+
+.empty {
+    display: none;
+}
+
+.main-logo2 { /* Alinhamento do logo */
+    display: none;
+}
+
+header { /* Cor da barra de menu */
+    background-color: transparent;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center; /* Alinhamento dos ítens do menu */
+    padding: 1.5rem 6rem; /* Tamanho vertical da barra de menu */
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list a { /* Cor do texto dos ítens do menu */
+    color: #24252a;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-list a:hover { /* Efeito de cor ao passar o mouse nos ítens do menu */
+    color: #24252a;
+}
+
+.nav-item {
+    margin: 0 20px; /* Espaçamento entre os ítens do menu */
+}
+
+.nav-link { /* Formatação dos ítens do menu */
+    font-family: "Protest Strike", sans-serif;
+    text-decoration: none;
+    font-size: 1.35rem;
+    color: #24252a;
+    font-weight: 400px;
+}
+
+.menu-icon { /* Hide do botão do menu quando o site estiver dimensionado em paisagem */
+    display: none;
+}
+
+.mobile-menu { /* Hide do menu suspenso quando o site estiver dimensionado em paisagem */
+    display: none;
+}
+
+.spacer1 {
+    display: block;
+    background: #24252a;
+    margin-inline: 20px;
+    height: 3px;
+    border-radius: 10px;
+}
+
+.banner {
+    margin: 20px;
+}
+
+.banner-auto {
+    margin: 20px;
+    height:fit-content;
+   
+}
+
+.slider {
+    display: flex;
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;  
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: 1000ms;
+}
+
+.slider input {
+    display: none;
+}
+
+#radio1:checked ~ .first {
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+	margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+	margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+	margin-left: -300%;    
+}
+
+#radio5:checked ~ .first {
+	margin-left: -400%;    
+}
+
+#radio6:checked ~ .first {
+	margin-left: -500%;    
+}
+
+.conteiner {
+    background-color: transparent;
+    text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+    .main-logo { /* Ocultação do logo quando o site estiver dimensiondo em retrato */
+        display: none;
+    }
+
+    .empty {
+        display: block;
+        height: 32px;
+        width: 32px;
+    }
+    
+    .main-logo2 {
+        display: flex;
+    }
+
+    .main-logo2 img { /* Alinhamento do logo */
+        display: flex;
+        max-width: 100%;
+        height: 228px;
+        object-fit: contain;
+    }
+
+    .nav-list {
+        display: none;
+    }
+    
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul { /* Menu suspenso */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu a:hover { /* Efeito de cor ao passar o mouse nos ítens do menu */
+        color: #00ffff;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .spacer1 {
+        display: block;
+        background: #24252a;
+        margin-inline: 20px;
+        height: 3px;
+        border-radius: 10px;
+    }
+
+}
