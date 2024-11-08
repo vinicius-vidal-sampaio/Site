@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Protest+Strike&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gagalin');
 * {
     padding: 0;
     margin: 0;
@@ -46,7 +48,7 @@ header { /* Cor da barra de menu */
 }
 
 .nav-list a:hover { /* Efeito de cor ao passar o mouse nos ítens do menu */
-    color: #24252a;
+    color: #f67828;
 }
 
 .nav-item {
@@ -54,10 +56,11 @@ header { /* Cor da barra de menu */
 }
 
 .nav-link { /* Formatação dos ítens do menu */
-    font-family: "Protest Strike", sans-serif;
+    font-family: "Fredoka", sans-serif;
     text-decoration: none;
+    font-weight: bold;
     font-size: 1.35rem;
-    color: #24252a;
+    color: #2e2eac;
     font-weight: 400px;
 }
 
@@ -69,6 +72,19 @@ header { /* Cor da barra de menu */
     display: none;
 }
 
+.phrase {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.phrase p{
+    font-family: "Gagalin";
+    text-align: center;
+    font-size: 120%;
+    color: black;
+    text-shadow: 0 0 10px #FFFFFF;
+}
+
 .spacer1 {
     display: block;
     background: #24252a;
@@ -78,6 +94,7 @@ header { /* Cor da barra de menu */
 }
 
 .banner {
+    display: none;
     margin: 20px;
 }
 
@@ -131,9 +148,32 @@ header { /* Cor da barra de menu */
 	margin-left: -500%;    
 }
 
-.conteiner {
-    background-color: transparent;
+.title1 p{
+    font-family: "Fredoka";
     text-align: center;
+    font-size: 130%;
+    color: #2e2eac;
+    font-weight: bold;
+}
+
+.text1 {
+    margin: 20px;
+}
+
+.text1 p{
+    margin-bottom: 10px;
+    font-family: "Fredoka";
+    text-align: justify;
+    font-size: 120%;
+    color: #2e2eac;
+}
+
+.text2 p{
+    font-family: "Fredoka";
+    text-align: center;
+    font-size: 120%;
+    color: #2e2eac;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 720px) {
@@ -192,7 +232,7 @@ header { /* Cor da barra de menu */
     }
 
     .mobile-menu a:hover { /* Efeito de cor ao passar o mouse nos ítens do menu */
-        color: #00ffff;
+        color: #f67828;
     }
 
     .mobile-menu .nav-item {
@@ -205,7 +245,7 @@ header { /* Cor da barra de menu */
     }
 
     .spacer1 {
-        display: block;
+        display: none;
         background: #24252a;
         margin-inline: 20px;
         height: 3px;
