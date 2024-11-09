@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Sixtyfour+Convergence&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Protest+Strike&family=Sixtyfour+Convergence&display=swap');
-@import url('https://fonts.cdnfonts.com/css/gagalin');
 * {
     padding: 0;
     margin: 0;
@@ -70,19 +68,12 @@ header { /* Cor da barra de menu */
 
 .mobile-menu { /* Hide do menu suspenso quando o site estiver dimensionado em paisagem */
     display: none;
-}
-
-.phrase {
-    display: none;
-    margin-bottom: 20px;
-}
-
-.phrase p{
-    font-family: "Gagalin";
-    text-align: center;
-    font-size: 120%;
-    color: black;
-    text-shadow: 0 0 10px #FFFFFF;
+    margin: 20px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .spacer1 {
@@ -157,23 +148,191 @@ header { /* Cor da barra de menu */
 }
 
 .text1 {
-    margin: 20px;
+    display: none;
+    margin: 10px 20px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .text1 p{
-    margin-bottom: 10px;
+    margin: 10px 15px;
     font-family: "Fredoka";
     text-align: justify;
     font-size: 120%;
     color: #2e2eac;
 }
 
+.text2 {
+    margin-top: 10px;
+}
+
 .text2 p{
+    display: block;
     font-family: "Fredoka";
     text-align: center;
     font-size: 120%;
     color: #2e2eac;
     font-weight: bold;
+}
+
+.label {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.label img {
+    max-width: 100%;
+    height: 32px;
+    object-fit: contain;
+}
+
+.whatsapp-botton a{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:20px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+}
+
+.read-more-button1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.read-more-button1 button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.read-more-button {
+    border-radius: 10px;
+    max-width: 100%;
+    height: 25px;
+}
+
+.learn-more-button {
+    border-radius: 10px;
+    max-width: 100%;
+    height: 25px;
+}
+
+.banner-infantil {
+    margin: 20px;
+}
+
+.banner-infantil img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.banner-infantil-title p{
+    margin-top: -10px;
+    font-family: "Fredoka";
+    text-align: center;
+    font-size: 130%;
+    color: #2e2eac;
+    font-weight: bold;
+}
+
+.learn-more-button1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.learn-more-button1 button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-adulto {
+    margin: 20px;
+}
+
+.banner-adulto img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.banner-adulto-title p{
+    margin-top: -10px;
+    font-family: "Fredoka";
+    text-align: center;
+    font-size: 130%;
+    color: #2e2eac;
+    font-weight: bold;
+}
+
+.learn-more-button2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.learn-more-button2 button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-ensino {
+    margin: 20px;
+}
+
+.banner-ensino img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.banner-ensino-title p{
+    margin-top: -10px;
+    font-family: "Fredoka";
+    text-align: center;
+    font-size: 130%;
+    color: #2e2eac;
+    font-weight: bold;
+}
+
+.learn-more-button3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.learn-more-button3 button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.rodape {
+    display: block;
+    margin: 10px 20px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.rodape p {
+    margin: 20px 20px;
+    font-weight: bold;
+    font-size: 80%;
 }
 
 @media screen and (max-width: 720px) {
@@ -194,7 +353,7 @@ header { /* Cor da barra de menu */
     .main-logo2 img { /* Alinhamento do logo */
         display: flex;
         max-width: 100%;
-        height: 228px;
+        height: 200px;
         object-fit: contain;
     }
 
@@ -249,6 +408,15 @@ header { /* Cor da barra de menu */
         background: #24252a;
         margin-inline: 20px;
         height: 3px;
+        border-radius: 10px;
+    }
+
+    .spacer {
+        display: block;
+        margin-top: 10px;
+        background: #24252a;
+        margin-inline: 20px;
+        height: 2.5px;
         border-radius: 10px;
     }
 

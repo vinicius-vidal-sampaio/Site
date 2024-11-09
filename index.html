@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.png">
+    <script src="assets/js/script.js" defer></script>
     <title>Clínica Espaço Brincar</title>
     <style>
         body { 
@@ -15,10 +18,11 @@
 </head>
 <body>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send/?phone=558896535205&amp;text=Olá,%20gostaria%20de%20saber%20mais%20informações%20sobre:%20" style="position:fixed;width:60px;height:60px;bottom:20px;right:20px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888; z-index:1000;" target="_blank">
-    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
-    </a>
+    <div class="whatsapp-botton">
+        <a href="https://api.whatsapp.com/send/?phone=558896535205&amp;text=Olá,%20gostaria%20de%20saber%20mais%20informações%20sobre:%20" target="_blank">
+        <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
+        </a>
+    </div>
 
     <div class="main-logo"> <!--Inserção do logo-->
         <img src="assets/img/Logo.png"/>
@@ -30,8 +34,9 @@
             <div class="empty"> <!--Elemento vazio para formatação do menu em formato retrato-->
             </div>
             <div class="main-logo2"> <!--Inserção do logo retrato-->
-                <img src="assets/img/Logo2.png"/>
+                <img src="assets/img/Logo.png"/>
             </div>
+            
             <div class="nav-list"> <!--Aqui estão descritos os ítens do menu-->
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">INÍCIO</a></li>
@@ -46,8 +51,8 @@
             </div>
         </nav>
 
-        <div class="phrase">
-            <p>Transformando a Fisioterapia em uma grande brincadeira</p>
+        <div class="label"> <!--Inserção do logo retrato-->
+            <img src="assets/img/Label.png"/>
         </div>
 
         <div class="mobile-menu"> <!--Code menu suspenso-->
@@ -97,15 +102,74 @@
         <div class="text1">
             <p>A terapia pode ser muito mais divertida e, se você acha que perde tempo da sessão... vamos te contar a verdade: PURO ENGANO!</p>
             <P>Uma criança que brinca está com mais vontade e engajada para realizar os movimentos que solicitamos na brincadeira, assim há maior ativação cerebral e resposta motora.</P>
+            <div class="text2">
+                <p>Vamos Brincar?</p>
+            </div>
         </div>
 
-        <div class="text2">
-            <p>Vamos Brincar?</p>
+        <div class="read-more-button1">
+            <button onclick="textShow()"><img class="read-more-button" src="assets/img/read-more-button.png"></button>
+        </div>
+
+        <div class="spacer">
+        </div>
+
+        <div class="banner-infantil">
+            <img src="assets/img/banner-infantil.png"/>
+        </div>
+
+        <div class="banner-infantil-title">
+            <p>Setor Infantil</p>
+        </div>
+
+        <div class="learn-more-button1">
+            <a href="#">
+            <button><img class="learn-more-button" src="assets/img/learn-more-button.png"></button>
+            </a>
+        </div>
+
+        <div class="spacer">
+        </div>
+
+        <div class="banner-adulto">
+            <img src="assets/img/banner-adulto.png"/>
         </div>
         
+        <div class="banner-adulto-title">
+            <p>Setor Adulto</p>
+        </div>
+
+        <div class="learn-more-button2">
+            <a href="#">
+            <button><img class="learn-more-button" src="assets/img/learn-more-button.png"></button>
+            </a>
+        </div>
+
+        <div class="spacer">
+        </div>
+
+        <div class="banner-ensino">
+            <img src="assets/img/banner-ensino.png"/>
+        </div>
+        
+        <div class="banner-ensino-title">
+            <p>Núcleo de Ensino</p>
+        </div>
+
+        <div class="learn-more-button3">
+            <a href="#">
+            <button><img class="read-more-button" src="assets/img/learn-more-button.png"></button>
+            </a>
+        </div>
+
+        <div class="spacer">
+        </div>
+
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <div class="rodape">
+        <p>Unidade 1 - Espaço Brincar Reabilitação Infantil, Rua Vital Lisboa Santos, 309, Jardim Gonzaga, Juazeiro do Norte, CE</p>
+    </div>
 
 </body>
 </html>
