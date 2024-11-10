@@ -36,7 +36,7 @@ header { /* Cor da barra de menu */
 }
 
 .nav-list a { /* Cor do texto dos ítens do menu */
-    color: #24252a;
+    color: #2e2eac;
 }
 
 .nav-list ul {
@@ -147,9 +147,13 @@ header { /* Cor da barra de menu */
     font-weight: bold;
 }
 
+.open {
+    display: block !important;
+}
+
 .text1 {
     display: none;
-    margin: 10px 20px;
+    margin: 10px 200px;
     background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 13.5px );
@@ -160,7 +164,7 @@ header { /* Cor da barra de menu */
 .text1 p{
     margin: 10px 15px;
     font-family: "Fredoka";
-    text-align: justify;
+    text-align: center;
     font-size: 120%;
     color: #2e2eac;
 }
@@ -179,14 +183,18 @@ header { /* Cor da barra de menu */
 }
 
 .label {
+    display: none;
+}
+
+.label-desktop {
     margin: 0 20px;
     display: flex;
     justify-content: center;
 }
 
-.label img {
+.label-desktop img {
     max-width: 100%;
-    height: 32px;
+    height: 35px;
     object-fit: contain;
 }
 
@@ -223,6 +231,12 @@ header { /* Cor da barra de menu */
     height: 25px;
 }
 
+.banners {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .learn-more-button {
     border-radius: 10px;
     max-width: 100%;
@@ -234,7 +248,7 @@ header { /* Cor da barra de menu */
 }
 
 .banner-infantil img{
-    max-width: 100%;
+    max-width: 500px;
     border-radius: 15px;
 }
 
@@ -264,7 +278,7 @@ header { /* Cor da barra de menu */
 }
 
 .banner-adulto img{
-    max-width: 100%;
+    max-width: 500px;
     border-radius: 15px;
 }
 
@@ -294,7 +308,7 @@ header { /* Cor da barra de menu */
 }
 
 .banner-ensino img{
-    max-width: 100%;
+    max-width: 500px;
     border-radius: 15px;
 }
 
@@ -322,6 +336,7 @@ header { /* Cor da barra de menu */
 .rodape {
     display: block;
     margin: 10px 20px;
+    padding: 10px 20px;
     background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 13.5px );
@@ -330,9 +345,51 @@ header { /* Cor da barra de menu */
 }
 
 .rodape p {
-    margin: 20px 20px;
+    margin: 5px 5px;
     font-weight: bold;
     font-size: 80%;
+    text-align: center;
+    color: #2e2eac;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.instagram-button button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.email-button button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.local-button button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.instagram-button img {
+    width: 40px;
+    margin-right: 5px;
+}
+
+.email-button img {
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.local-button img {
+    width: 40px;
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 720px) {
@@ -354,6 +411,22 @@ header { /* Cor da barra de menu */
         display: flex;
         max-width: 100%;
         height: 200px;
+        object-fit: contain;
+    }
+
+    .label-desktop {
+        display: none;
+    }
+    
+    .label {
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .label img {
+        max-width: 100%;
+        height: 32px;
         object-fit: contain;
     }
 
@@ -405,10 +478,6 @@ header { /* Cor da barra de menu */
 
     .spacer1 {
         display: none;
-        background: #24252a;
-        margin-inline: 20px;
-        height: 3px;
-        border-radius: 10px;
     }
 
     .spacer {
@@ -416,8 +485,144 @@ header { /* Cor da barra de menu */
         margin-top: 10px;
         background: #24252a;
         margin-inline: 20px;
-        height: 2.5px;
+        height: 1.75px;
         border-radius: 10px;
+    }
+
+    .text1 {
+        display: none;
+        margin: 10px 20px;
+        background: rgba( 255, 255, 255, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 13.5px );
+        border-radius: 20px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .text1 p{
+        margin: 10px 15px;
+        font-family: "Fredoka";
+        text-align: center;
+        font-size: 120%;
+        color: #2e2eac;
+    }
+
+    .read-more-button1 {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .read-more-button1 button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .read-more-button {
+        border-radius: 10px;
+        max-width: 100%;
+        height: 25px;
+    }
+    
+    .learn-more-button {
+        border-radius: 10px;
+        max-width: 100%;
+        height: 25px;
+    }
+
+    .banners {
+        display: block !important;
+    }
+    
+    .banner-infantil {
+        margin: 20px;
+    }
+    
+    .banner-infantil img{
+        max-width: 100%;
+        border-radius: 15px;
+    }
+    
+    .banner-infantil-title p{
+        margin-top: -10px;
+        font-family: "Fredoka";
+        text-align: center;
+        font-size: 130%;
+        color: #2e2eac;
+        font-weight: bold;
+    }
+    
+    .learn-more-button1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .learn-more-button1 button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .banner-adulto {
+        margin: 20px;
+    }
+    
+    .banner-adulto img{
+        max-width: 100%;
+        border-radius: 15px;
+    }
+    
+    .banner-adulto-title p{
+        margin-top: -10px;
+        font-family: "Fredoka";
+        text-align: center;
+        font-size: 130%;
+        color: #2e2eac;
+        font-weight: bold;
+    }
+    
+    .learn-more-button2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .learn-more-button2 button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .banner-ensino {
+        margin: 20px;
+    }
+    
+    .banner-ensino img{
+        max-width: 100%;
+        border-radius: 15px;
+    }
+    
+    .banner-ensino-title p{
+        margin-top: -10px;
+        font-family: "Fredoka";
+        text-align: center;
+        font-size: 130%;
+        color: #2e2eac;
+        font-weight: bold;
+    }
+    
+    .learn-more-button3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .learn-more-button3 button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 
 }
