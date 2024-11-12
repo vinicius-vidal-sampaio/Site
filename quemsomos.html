@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.png">
+    <script src="assets/js/script.js" defer></script>
+    <title>Clínica Espaço Brincar</title>
+    <style>
+        body { 
+            background-image: url(assets/img/background.png);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-logo"> <!--Inserção do logo-->
+        <img src="assets/img/Logo.png"/>
+    </div>
+
+    <div class="label-desktop"> <!--Inserção do logo retrato-->
+        <img src="assets/img/Label.png"/>
+    </div>
+
+    <header>
+
+        <nav class="nav-bar"> <!--Code do menu-->
+            <div class="empty"> <!--Elemento vazio para formatação do menu em formato retrato-->
+            </div>
+            <div class="main-logo2"> <!--Inserção do logo retrato-->
+                <img src="assets/img/Logo.png"/>
+            </div>
+            
+            <div class="nav-list"> <!--Aqui estão descritos os ítens do menu-->
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">INÍCIO</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">QUEM SOMOS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">SERVIÇOS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CURSOS E ESPECIALIZAÇÕES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTATOS</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon"> <!--Code do botão do menu-->
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg"></button>
+            </div>
+        </nav>
+
+        <div class="label"> <!--Inserção do logo retrato-->
+            <img src="assets/img/Label.png"/>
+        </div>
+
+        <div class="mobile-menu"> <!--Code menu suspenso-->
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">INÍCIO</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">QUEM SOMOS</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">SERVIÇOS</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">CURSOS E ESPECIALIZAÇÕES</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">CONTATOS</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="spacer1">
+    </div>
+
+    <div class="title1-quemsomos">
+        <p>Quem é a equipe brincar?</p>
+    </div>
+
+    <div class="equipe-img">
+        <img src="assets/img/equipe.png"/>
+    </div>
+
+    <div class="text1-quemsomos">
+        <p>O Espaço Brincar surgiu em 2020 com o propósito de levar o brincar para dentro dos atendimentos e deu super certo!<br>
+            O brincar é a forma como o cérebro da criança se desenvolve, é através do brincar que ela aprende sobre si mesma e sobre o outro. Pensando assim nós perguntamos: E como fica a criança com desenvolvimento atípico? Crianças que por muitas vezes não conseguem brincar, como esse cérebro se desenvolve? Foi nesse contexto que surgiu o ESPAÇO BRINCAR, uma clínica de fisioterapia para crianças com desordens neurológicas diversas mas com um único objetivo: trazer os melhores métodos da fisioterapia associando a brincadeiras e permitir que cada criança brinque! Porque toda infância merece ser mágica!<br>
+            Como diz tia Irma: É NO BRINCAR QUE O CÉREBRO SE TRANSFORMA!</p>
+    </div>
+
+    <div class="title2-quemsomos">
+        <p>Conheça nossa equipe</p>
+    </div>
+
+    <div class="equipe">
+
+        <div class="profile1">
+            
+            <script id="profile1-show" type="text/javascript">
+                function profile1Show() {
+                    let profileshow = document.querySelector('.profile1-description');
+                    if (profileshow.classList.contains('open')) {
+                        profileshow.classList.remove('open');
+                        document.querySelector('.down-button').src = "assets/img/down.svg";
+                    } else {
+                        profileshow.classList.add('open');
+                        document.querySelector('.up-button').src = "assets/img/up.svg";
+                    }
+
+                    let profileshow1 = document.querySelector('.profile1-button');
+                    if (profileshow1.classList.contains('none')) {
+                        profileshow1.classList.remove('none');
+                    } else {
+                        profileshow1.classList.add('none');
+                    }
+                }
+            </script>
+            
+            <div class="profile-img">
+                <img src="assets/img/profile.png"/>
+            </div>
+
+            <div class="profile-box">
+
+                <div class="profile1-description">
+                    <p>Nome: Irma Katarine Cavalcante</p>
+                    <p>Crefito: 567565sd</p>
+                    <p>Formação: Fisioterapeuta</p>
+                    
+                    <div class="up-button">
+                    <button onclick="profile1Show()"><img class="up-button" src="assets/img/up.svg"></button>
+                    </div>
+                </div>
+                
+                <div class="profile1-button">
+                    <button onclick="profile1Show()"><p>Quem é tia Irma?</p><img class="down-button" src="assets/img/down.svg"></button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="profile2">
+            
+            <script id="profile2-show" type="text/javascript">
+                function profile2Show() {
+                    let profileshow = document.querySelector('.profile2-description');
+                    if (profileshow.classList.contains('open')) {
+                        profileshow.classList.remove('open');
+                        document.querySelector('.down-button').src = "assets/img/down.svg";
+                    } else {
+                        profileshow.classList.add('open');
+                        document.querySelector('.up-button').src = "assets/img/up.svg";
+                    }
+
+                    let profileshow1 = document.querySelector('.profile2-button');
+                    if (profileshow1.classList.contains('none')) {
+                        profileshow1.classList.remove('none');
+                    } else {
+                        profileshow1.classList.add('none');
+                    }
+                }
+            </script>
+            
+            <div class="profile-img">
+                <img src="assets/img/profile.png"/>
+            </div>
+
+            <div class="profile-box">
+
+                <div class="profile2-description">
+                    <p>Nome: Irma Katarine Cavalcante</p>
+                    <p>Crefito: 567565sd</p>
+                    <p>Formação: Fisioterapeuta</p>
+                    
+                    <div class="up-button">
+                    <button onclick="profile2Show()"><img class="up-button" src="assets/img/up.svg"></button>
+                    </div>
+                </div>
+                
+                <div class="profile2-button">
+                    <button onclick="profile2Show()"><p>Quem é tio Alison?</p><img class="down-button" src="assets/img/down.svg"></button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="profile3">
+            
+            <script id="profile3-show" type="text/javascript">
+                function profile3Show() {
+                    let profileshow = document.querySelector('.profile3-description');
+                    if (profileshow.classList.contains('open')) {
+                        profileshow.classList.remove('open');
+                        document.querySelector('.down-button').src = "assets/img/down.svg";
+                    } else {
+                        profileshow.classList.add('open');
+                        document.querySelector('.up-button').src = "assets/img/up.svg";
+                    }
+
+                    let profileshow1 = document.querySelector('.profile3-button');
+                    if (profileshow1.classList.contains('none')) {
+                        profileshow1.classList.remove('none');
+                    } else {
+                        profileshow1.classList.add('none');
+                    }
+                }
+            </script>
+            
+            <div class="profile-img">
+                <img src="assets/img/profile.png"/>
+            </div>
+
+            <div class="profile-box">
+
+                <div class="profile3-description">
+                    <p>Nome: Irma Katarine Cavalcante</p>
+                    <p>Crefito: 567565sd</p>
+                    <p>Formação: Fisioterapeuta</p>
+                    
+                    <div class="up-button">
+                    <button onclick="profile3Show()"><img class="up-button" src="assets/img/up.svg"></button>
+                    </div>
+                </div>
+                
+                <div class="profile3-button">
+                    <button onclick="profile3Show()"><p>Quem é tio Alison?</p><img class="down-button" src="assets/img/down.svg"></button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+    <div class="rodape">
+        <p>Clínica Espaço Brincar</p>
+        <p>Rua Vital Lisboa Santos, 309, Jardim Gonzaga,<br>Juazeiro do Norte, CE - CEP 63010-465</p>
+        <p>CNPJ 42.038.096/0001-27</p>
+        <div class="contacts">
+            <div class="instagram-button">
+                <a href="https://www.instagram.com/espaco_brincar" target="_blank">
+                <button><img class="contact-button" src="assets/img/instagram.png"></button>
+                </a>
+            </div>
+            <div class="email-button">
+                <a href="mailto:clinicaespacobrincar@gmail.com" target="_blank">
+                <button><img class="contact-button" src="assets/img/email.png"></button>
+                </a>
+            </div>
+            <div class="local-button">
+                <a href="https://maps.app.goo.gl/47e2jUesgosohFqy5" target="_blank">
+                <button><img class="contact-button" src="assets/img/local.png"></button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatsapp-botton">
+        <a href="https://api.whatsapp.com/send/?phone=558896535205&amp;text=Olá,%20gostaria%20de%20saber%20mais%20informações%20sobre:%20" target="_blank">
+        <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
+        </a>
+    </div>
+
+</body>
+</html>
