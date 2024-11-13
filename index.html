@@ -105,8 +105,60 @@
             </div>
         </div>
 
-        <div class="read-more-button1">
-            <button onclick="textShow()"><img class="read-more-button" src="assets/img/read-more-button.png"></button>
+        <div class="read-more-button-container">
+
+            <script type="text/javascript">
+                function textOpen() {
+                    let textshow1 = document.querySelector('.text1');
+                    if (textshow1.classList.contains('open')) {
+                        textshow1.classList.remove('open');
+                    } else {
+                        textshow1.classList.add('open');
+                    }
+
+                    let textshow2 = document.querySelector('.read-more-button2');
+                    if (textshow2.classList.contains('none')) {
+                        textshow2.classList.remove('none');
+                    }
+
+                    let textshow3 = document.querySelector('.read-more-button1');
+                    if (textshow3.classList.contains('none')) {
+                        textshow3.classList.remove('none');
+                    } else {
+                        textshow3.classList.add('none');
+                    }
+                }
+
+                function textClose() {
+                    let textshow1 = document.querySelector('.text1');
+                    if (textshow1.classList.contains('open')) {
+                        textshow1.classList.remove('open');
+                    } else {
+                        textshow1.classList.add('open');
+                    }
+
+                    let textshow2 = document.querySelector('.read-more-button1');
+                    if (textshow2.classList.contains('none')) {
+                        textshow2.classList.remove('none');
+                    }
+
+                    let textshow3 = document.querySelector('.read-more-button2');
+                    if (textshow3.classList.contains('none')) {
+                        textshow3.classList.remove('none');
+                    } else {
+                        textshow3.classList.add('none');
+                    }
+                }
+            </script>
+
+            <div class="read-more-button1">
+                <button onclick="textOpen()"><p>Leia Mais</p></button>
+            </div>
+
+            <div class="read-more-button2 none">
+                <button onclick="textClose()"><p>Ocultar</p></button>
+            </div>
+
         </div>
 
         <div class="spacer">

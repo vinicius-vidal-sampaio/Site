@@ -9,17 +9,6 @@ function menuShow() {
     }
 }
 
-function textShow() {
-    let menuMobile = document.querySelector('.text1');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.read-more-button').src = "assets/img/read-more-button.png";
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.read-more-button').src = "assets/img/ocultar.png";
-    }
-}
-
 let count = 1;
 document.getElementById("radio1").checked = true;
 

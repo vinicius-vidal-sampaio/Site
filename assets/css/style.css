@@ -151,6 +151,10 @@ header { /* Cor da barra de menu */
     display: block !important;
 }
 
+.none {
+    display: none;
+}
+
 .text1 {
     display: none;
     margin: 10px 200px;
@@ -213,13 +217,53 @@ header { /* Cor da barra de menu */
     z-index:1000;
 }
 
-.read-more-button1 {
-    margin-top: 10px;
+.read-more-button-container {
     display: flex;
     justify-content: center;
+    margin: 10px 20px;
+}
+
+.read-more-button1 {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.read-more-button1 p {
+    font-family: "Fredoka";
+    text-align: center;
+    font-size: 120%;
+    color: #2e2eac;
+    font-weight: 550;
 }
 
 .read-more-button1 button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.read-more-button2 {
+    display: flex;
+    width: 100px;
+    height: 35px;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.read-more-button2 p {
+    font-family: "Fredoka";
+    text-align: center;
+    font-size: 120%;
+    color: #2e2eac;
+    font-weight: 550;
+}
+
+.read-more-button2 button {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -417,6 +461,182 @@ header { /* Cor da barra de menu */
     margin-left: 5px;
 }
 
+/* Quem Somos */
+
+.none {
+    display: none !important;
+}
+
+.title1-quemsomos {
+    margin: 20px;
+}
+
+.title1-quemsomos p{
+    font-family: "Fredoka";
+    text-align: center;
+    font-size: 150%;
+    color: #2e2eac;
+    font-weight: bold;
+}
+
+.equipe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.equipe-img {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.equipe-img img {
+    width: 800px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.text1-quemsomos {
+    display: block;
+    margin: 20px 80px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.text1-quemsomos p{
+    margin: 10px 15px;
+    font-family: "Fredoka";
+    text-align: center;
+    font-size: 110%;
+    color: #2e2eac;
+}
+
+.title2-quemsomos {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.title2-quemsomos p{
+    font-family: "Fredoka";
+    text-align: center;
+    font-size: 150%;
+    color: #2e2eac;
+    font-weight: bold;
+}
+
+.profile1, .profile2, .profile3, .profile4, .profile5, .profile6, .profile7, .profile8, .profile9 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-box {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img img{
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.profile1-button, .profile2-button, .profile3-button, .profile4-button, .profile5-button, .profile6-button, .profile7-button, .profile8-button, .profile9-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: -110px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur( 13.5px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.profile1-button p, .profile2-button p, .profile3-button p, .profile4-button p, .profile5-button p, .profile6-button p, .profile7-button p, .profile8-button p, .profile9-button p {
+    font-family: "Fredoka";
+    text-align: center;
+    text-shadow: 2px 2px 8px #ffffff;
+    font-size: 250%;
+    font-weight: bold;
+    color: #2e2eac;
+    margin-top: 10px;
+}
+
+.profile1-button button, .profile2-button button, .profile3-button button, .profile4-button button, .profile5-button button, .profile6-button button, .profile7-button button, .profile8-button button, .profile9-button button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.profile1-button img, .profile2-button img, .profile3-button img, .profile4-button img, .profile5-button img, .profile6-button img, .profile7-button img, .profile8-button img, .profile9-button img {
+    width: 50px;
+}
+
+.profile1-button img:hover, .profile2-button img:hover, .profile3-button img:hover, .profile4-button img:hover, .profile5-button img:hover, .profile6-button img:hover, .profile7-button img:hover, .profile8-button img:hover, .profile9-button img:hover {
+    width: 70px;
+    transition: 100ms;
+}
+
+.profile1-description, .profile2-description, .profile3-description, .profile4-description, .profile5-description, .profile6-description, .profile7-description, .profile8-description, .profile9-description {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: -15px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.profile1-description p, .profile2-description p, .profile3-description p, .profile4-description p, .profile5-description p, .profile6-description p, .profile7-description p, .profile8-description p, .profile9-description p {
+    margin: 10px 15px;
+    font-family: "Fredoka";
+    text-align: justify;
+    font-size: 110%;
+    color: #2e2eac;
+}
+
+.profile1-description button, .profile2-description button, .profile3-description button, .profile4-description button, .profile5-description button, .profile6-description button, .profile7-description button, .profile8-description button, .profile9-description button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.profile1-description img, .profile2-description img, .profile3-description img, .profile4-description img, .profile5-description img, .profile6-description img, .profile7-description img, .profile8-description img, .profile9-description img {
+    width: 50px;
+    justify-content: center;
+}
+
+.profile1-description img:hover, .profile2-description img:hover, .profile3-description img:hover, .profile4-description img:hover, .profile5-description img:hover, .profile6-description img:hover, .profile7-description img:hover, .profile8-description img:hover, .profile9-description img:hover {
+    width: 70px;
+    transition: 100ms;
+}
+
+.up-button {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width: 720px) {
     .main-logo { /* Ocultação do logo quando o site estiver dimensiondo em retrato */
         display: none;
@@ -531,18 +751,6 @@ header { /* Cor da barra de menu */
         font-size: 120%;
         color: #2e2eac;
     }
-
-    .read-more-button1 {
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .read-more-button1 button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
     
     .read-more-button {
         border-radius: 10px;
@@ -654,37 +862,7 @@ header { /* Cor da barra de menu */
     }
 
     /* Quem Somos */
-
-    .none {
-        display: none !important;
-    }
     
-    .title1-quemsomos {
-        margin: 20px;
-    }
-    
-    .title1-quemsomos p{
-        font-family: "Fredoka";
-        text-align: center;
-        font-size: 130%;
-        color: #2e2eac;
-        font-weight: bold;
-    }
-
-    .equipe-img {
-        margin: 0 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .equipe-img img {
-        width: 500px;
-        height: auto;
-        max-width: 100%;
-        border-radius: 15px;
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    }
-
     .text1-quemsomos {
         display: block;
         margin: 20px;
@@ -694,126 +872,10 @@ header { /* Cor da barra de menu */
         border-radius: 20px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
-    
-    .text1-quemsomos p{
-        margin: 10px 15px;
-        font-family: "Fredoka";
-        text-align: justify;
-        font-size: 110%;
-        color: #2e2eac;
-    }
-
-    .title2-quemsomos {
-        margin: 20px;
-    }
-    
-    .title2-quemsomos p{
-        font-family: "Fredoka";
-        text-align: center;
-        font-size: 130%;
-        color: #2e2eac;
-        font-weight: bold;
-    }
 
     .equipe {
         display: flex;
         flex-direction: column;
-    }
-
-    .profile1, .profile2, .profile3, .profile4, .profile5, .profile6, .profile7, .profile8, .profile9 {
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-    }
-
-    .profile-img {
-        display: flex;
-        justify-content: center;
-    }
-
-    .profile-box {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .profile-img img{
-        display: flex;
-        border-radius: 15px;
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-    }
-
-    .profile1-button, .profile2-button, .profile3-button, .profile4-button, .profile5-button, .profile6-button, .profile7-button, .profile8-button, .profile9-button {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        max-width: 500px;
-        margin-top: -110px;
-        background: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur( 13.5px );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
-
-    .profile1-button p, .profile2-button p, .profile3-button p, .profile4-button p, .profile5-button p, .profile6-button p, .profile7-button p, .profile8-button p, .profile9-button p {
-        font-family: "Fredoka";
-        text-align: center;
-        text-shadow: 2px 2px 8px #ffffff;
-        font-size: 250%;
-        font-weight: bold;
-        color: #2e2eac;
-        margin-top: 10px;
-    }
-    
-    .profile1-button button, .profile2-button button, .profile3-button button, .profile4-button button, .profile5-button button, .profile6-button button, .profile7-button button, .profile8-button button, .profile9-button button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .profile1-button img, .profile2-button img, .profile3-button img, .profile4-button img, .profile5-button img, .profile6-button img, .profile7-button img, .profile8-button img, .profile9-button img {
-        width: 50px;
-    }
-
-    .profile1-description, .profile2-description, .profile3-description, .profile4-description, .profile5-description, .profile6-description, .profile7-description, .profile8-description, .profile9-description {
-        display: none;
-        justify-content: center;
-        width: 100%;
-        max-width: 500px;
-        margin-top: -15px;
-        background: rgba( 255, 255, 255, 0.35 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 13.5px );
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-    }
-    
-    .profile1-description p, .profile2-description p, .profile3-description p, .profile4-description p, .profile5-description p, .profile6-description p, .profile7-description p, .profile8-description p, .profile9-description p {
-        margin: 10px 15px;
-        font-family: "Fredoka";
-        text-align: justify;
-        font-size: 110%;
-        color: #2e2eac;
-    }
-
-    .profile1-description button, .profile2-description button, .profile3-description button, .profile4-description button, .profile5-description button, .profile6-description button, .profile7-description button, .profile8-description button, .profile9-description button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .profile1-description img, .profile2-description img, .profile3-description img, .profile4-description img, .profile5-description img, .profile6-description img, .profile7-description img, .profile8-description img, .profile9-description img {
-        width: 50px;
-        justify-content: center;
-    }
-
-    .up-button {
-        display: flex;
-        justify-content: center;
     }
 
 }
