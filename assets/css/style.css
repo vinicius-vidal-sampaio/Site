@@ -530,7 +530,7 @@ header { /* Cor da barra de menu */
     font-weight: bold;
 }
 
-.profile1, .profile2, .profile3, .profile4, .profile5, .profile6, .profile7, .profile8, .profile9 {
+.profile1, .profile2, .profile3, .profile4, .profile5, .profile6, .profile7, .profile8, .profile9, .profile10, .profile11 {
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -555,7 +555,7 @@ header { /* Cor da barra de menu */
     height: auto;
 }
 
-.profile1-button, .profile2-button, .profile3-button, .profile4-button, .profile5-button, .profile6-button, .profile7-button, .profile8-button, .profile9-button {
+.profile1-button, .profile2-button, .profile3-button, .profile4-button, .profile5-button, .profile6-button, .profile7-button, .profile8-button, .profile9-button, .profile10-button, .profile11-button {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -569,7 +569,7 @@ header { /* Cor da barra de menu */
     border-bottom-right-radius: 15px;
 }
 
-.profile1-button p, .profile2-button p, .profile3-button p, .profile4-button p, .profile5-button p, .profile6-button p, .profile7-button p, .profile8-button p, .profile9-button p {
+.profile1-button p, .profile2-button p, .profile3-button p, .profile4-button p, .profile5-button p, .profile6-button p, .profile7-button p, .profile8-button p, .profile9-button p, .profile10-button p, .profile11-button p {
     font-family: "Fredoka";
     text-align: center;
     text-shadow: 2px 2px 8px #ffffff;
@@ -579,22 +579,22 @@ header { /* Cor da barra de menu */
     margin-top: 10px;
 }
 
-.profile1-button button, .profile2-button button, .profile3-button button, .profile4-button button, .profile5-button button, .profile6-button button, .profile7-button button, .profile8-button button, .profile9-button button {
+.profile1-button button, .profile2-button button, .profile3-button button, .profile4-button button, .profile5-button button, .profile6-button button, .profile7-button button, .profile8-button button, .profile9-button button, .profile10-button button, .profile11-button button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.profile1-button img, .profile2-button img, .profile3-button img, .profile4-button img, .profile5-button img, .profile6-button img, .profile7-button img, .profile8-button img, .profile9-button img {
+.profile1-button img, .profile2-button img, .profile3-button img, .profile4-button img, .profile5-button img, .profile6-button img, .profile7-button img, .profile8-button img, .profile9-button img, .profile10-button img, .profile11-button img {
     width: 50px;
 }
 
-.profile1-button img:hover, .profile2-button img:hover, .profile3-button img:hover, .profile4-button img:hover, .profile5-button img:hover, .profile6-button img:hover, .profile7-button img:hover, .profile8-button img:hover, .profile9-button img:hover {
+.profile1-button img:hover, .profile2-button img:hover, .profile3-button img:hover, .profile4-button img:hover, .profile5-button img:hover, .profile6-button img:hover, .profile7-button img:hover, .profile8-button img:hover, .profile9-button img:hover, .profile10-button img:hover, .profile11-button img:hover {
     width: 70px;
     transition: 100ms;
 }
 
-.profile1-description, .profile2-description, .profile3-description, .profile4-description, .profile5-description, .profile6-description, .profile7-description, .profile8-description, .profile9-description {
+.profile1-description, .profile2-description, .profile3-description, .profile4-description, .profile5-description, .profile6-description, .profile7-description, .profile8-description, .profile9-description, .profile10-description, .profile11-description {
     display: none;
     justify-content: center;
     width: 100%;
@@ -608,7 +608,7 @@ header { /* Cor da barra de menu */
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.profile1-description p, .profile2-description p, .profile3-description p, .profile4-description p, .profile5-description p, .profile6-description p, .profile7-description p, .profile8-description p, .profile9-description p {
+.profile1-description p, .profile2-description p, .profile3-description p, .profile4-description p, .profile5-description p, .profile6-description p, .profile7-description p, .profile8-description p, .profile9-description p, .profile10-description p, .profile11-description p {
     margin: 10px 15px;
     font-family: "Fredoka";
     text-align: justify;
@@ -616,18 +616,18 @@ header { /* Cor da barra de menu */
     color: #2e2eac;
 }
 
-.profile1-description button, .profile2-description button, .profile3-description button, .profile4-description button, .profile5-description button, .profile6-description button, .profile7-description button, .profile8-description button, .profile9-description button {
+.profile1-description button, .profile2-description button, .profile3-description button, .profile4-description button, .profile5-description button, .profile6-description button, .profile7-description button, .profile8-description button, .profile9-description button, .profile10-description button, .profile11-description button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.profile1-description img, .profile2-description img, .profile3-description img, .profile4-description img, .profile5-description img, .profile6-description img, .profile7-description img, .profile8-description img, .profile9-description img {
+.profile1-description img, .profile2-description img, .profile3-description img, .profile4-description img, .profile5-description img, .profile6-description img, .profile7-description img, .profile8-description img, .profile9-description img, .profile10-description img, .profile11-description img {
     width: 50px;
     justify-content: center;
 }
 
-.profile1-description img:hover, .profile2-description img:hover, .profile3-description img:hover, .profile4-description img:hover, .profile5-description img:hover, .profile6-description img:hover, .profile7-description img:hover, .profile8-description img:hover, .profile9-description img:hover {
+.profile1-description img:hover, .profile2-description img:hover, .profile3-description img:hover, .profile4-description img:hover, .profile5-description img:hover, .profile6-description img:hover, .profile7-description img:hover, .profile8-description img:hover, .profile9-description img:hover, .profile10-description img:hover, .profile11-description img:hover {
     width: 70px;
     transition: 100ms;
 }
